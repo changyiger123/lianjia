@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理中心首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/imgUp.css">
+</head>
+<body>
+<div class="topNavwrap">
+    <div class="topNav">
+        <span class="locate">杭州</span>
+        <a href="javascript:;"><span>登录</span></a>
+        <a href="javascript:;"><span>注册</span></a>
+        <span>咨询电话：0571-5626-8961</span>
+    </div>
+</div>
+<div class="contentWrap clearfix">
+    <div class="subNav clearfix">
+        <div class="logo left">
+            <img src="img/grzxlogo.png" alt="">
+        </div>
+        <p class="left">管理中心首页</p>
+    </div>
+    <div class="content clearfix">
+        <div class="leftList left">
+            <p>管理中心首页</p>
+            <dl>
+                <dt>订单中心</dt>
+                <dd data-id="2">业主预约</dd>
+                <dd data-id="3">业主订单</dd>
+            </dl>
+            <dl>
+                <dt>账户中心</dt>
+                <dd data-id="4">余额</dd>
+            </dl>
+            <dl>
+                <dt>案例中心</dt>
+                <dd data-id="5">已通过</dd>
+                <dd data-id="6">审核中</dd>
+                <dd data-id="7">上传案例</dd>
+            </dl>
+            <dl>
+                <dt>公司团队</dt>
+                <dd data-id="8">团队人员</dd>
+                <dd data-id="9">添加人员</dd>
+            </dl>
+            <dl>
+                <dt>公司资料</dt>
+                <dd data-id="10">公司介绍</dd>
+                <dd data-id="11">相关资质</dd>
+                <dd data-id="12">绑定邮箱</dd>
+                <dd data-id="13">修改密码</dd>
+            </dl>
+            <dl>
+                <dt>消息盒子</dt>
+                <dd data-id="14">系统通知</dd>
+            </dl>
+        </div>
+        <ul class="rightContent left">
+            <li style="display: block">
+                <div class="pInfo clearfix">
+                    <dl class="left firdl" style="border-right:none;">
+                        <dt class="left"><img src="img/headimg.png" alt=""></dt>
+                        <dd class="left">
+                            <p><span>恋家科技有限公司</span>&nbsp;&nbsp;<a href="javascript:;">修改资料</a></p>
+                            <p>设计师:<span style="margin-right: 20px">10个</span>项目经理:<span>20个</span></p>
+                            <p style="background: url(img/addimg.png) no-repeat left center;text-indent: 30px;"><span style="color:#999999;font-size: 14px;">杭州市秋溢路399号金润科技园B座9楼</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="listMessage" style="height: 213px;">
+                    <p class="listTitle clearfix"><span class="left"></span><b class="left">我的订单</b></p>
+                    <div class="messageContent">
+                        <dl class="clearfix" style="padding-left:20%">
+                            <dt class="left"><img src="img/grzxtanhao.png" alt=""></dt>
+                            <dd class="left">暂无最新订单哦~</dd>
+                        </dl>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listMessage">
+                    <p class="listTitle clearfix"><span class="left"></span><b class="left">业主预约</b></p>
+                    <div class="messageContent">
+                        <dl>
+                            <dt class="left">
+                                <img src="img/crytx.png" alt="">
+                            </dt>
+                            <dd class="left" style="font-size: 24px;margin-top: 53px;color:#666666;">
+                                暂无业主的预约信息哦~
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="listMessage">
+                    <p class="listTitle clearfix"><span class="left"></span><b class="left">业主订单</b></p>
+                    <div class="messageContent">
+                        <dl>
+                            <dt class="left">
+                                <img src="img/crytx.png" alt="">
+                            </dt>
+                            <dd class="left" style="font-size: 24px;margin-top: 53px;color:#666666;">
+                                暂无业主的订单信息哦~
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pInfo clearfix">
+                    <dl class="left firdl" style="border-right: none">
+                        <dt class="left"><img src="img/touxiang.png" alt=""></dt>
+                        <dd class="left">
+                            <p><span>我的可用余额:</span>&nbsp;&nbsp;<a href="javascript:;">￥100000</a></p>
+                            <p>全部余额: <span>￥110000</span></p>
+                            <p>账户状态: <span>有效</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="listMessage">
+                    <p class="listTitle clearfix"><span class="left"></span><b class="left">我的账单</b></p>
+                    <div class="messageContent">
+                        <dl>
+                            <dt class="left">
+                                <img src="img/crytx.png" alt="">
+                            </dt>
+                            <dd class="left" style="font-size: 24px;margin-top: 53px;color:#666666;">
+                                暂时没有账单信息哦~
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </li>
+            <li class="comPlaint" style="height: auto">
+                <p class="listTitle clearfix"><span class="left"></span><b class="left">已通过案例</b></p>
+                <!--<div class="caseList">-->
+
+                <!--</div>-->
+                <div id="biuuu_city_list"></div>
+                <div id="biuuu_city" class="caseList">
+                    <div class="caseImg left">
+                        <img src="img/anli.png" alt="">
+                    </div>
+                    <div class="caseWord left">
+                        <p>于女士的家</p>
+                        <p><span>简约/一居/60㎡</span></p>
+                        <p><span>设计师&nbsp;:&nbsp;杭州恋家</span></p>
+                    </div>
+                    <div class="delete right">删除</div>
+                </div>
+            </li>
+            <li class="personalData clearfix">
+                <p class="listTitle clearfix"><span class="left"></span><b class="left">已通过案例</b></p>
+                <!--<div class="caseList">-->
+
+                <!--</div>-->
+                <div class="caseList">
+                    <div class="caseImg left">
+                        <img src="img/anli.png" alt="">
+                    </div>
+                    <div class="caseWord left">
+                        <p>于女士的家</p>
+                        <p><span>简约/一居/60㎡</span></p>
+                        <p><span>设计师&nbsp;:&nbsp;杭州恋家</span></p>
+                    </div>
+                    <div class="delete right">删除</div>
+                </div>
+                <div class="caseList">
+                    <div class="caseImg left">
+                        <img src="img/anli.png" alt="">
+                    </div>
+                    <div class="caseWord left">
+                        <p>于女士的家</p>
+                        <p><span>简约/一居/60㎡</span></p>
+                        <p><span>设计师&nbsp;:&nbsp;杭州恋家</span></p>
+                    </div>
+                    <div class="delete right">删除</div>
+                </div>
+                <div class="caseList">
+                    <div class="caseImg left">
+                        <img src="img/anli.png" alt="">
+                    </div>
+                    <div class="caseWord left">
+                        <p>于女士的家</p>
+                        <p><span>简约/一居/60㎡</span></p>
+                        <p><span>设计师&nbsp;:&nbsp;杭州恋家</span></p>
+                    </div>
+                    <div class="delete right">删除</div>
+                </div>
+            </li>
+            <li class="personalData">
+                <p class="listTitle clearfix"><span class="left"></span><b class="left">上传案例</b></p>
+                <form method="post" action="yz_administration_self.php" onsubmit="return checkform1(this)" enctype="multipart/form-data" id="fm">
+                    <div class="personal_info uploadtext">
+                        <div>
+                            <label>小区名称:&nbsp;</label><span><input type="text" style="width:264px;height:34px;"></span>
+                        </div>
+                        <div style="margin:10px 0">
+                            <label>类型:</label>&nbsp;
+                            <select name="select" id="select_k1" class="xla_k" style="width:154px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>风格:</label>&nbsp;
+                            <select name="select" id="select_k2" class="xla_k" style="width:114px;">
+                                <option value="简约">简约</option>
+                                <option value="简约1">简约1</option>
+                                <option value="简约2">简约2</option>
+                            </select>
+                        </div>
+                        <div style="margin: 10px 0">
+                            <label>面积:</label>&nbsp;
+                            <input type="text" value="" name="mj" style="width:264px;height:34px;" />
+                        </div>
+                        <div class="desiners">
+                            <label>设计师:</label>
+                            <select name='desiner' id='desiner' class="xla_k" style="width:264px;">
+                                <option value='1'>杭州恋家装修公司</option>
+                                <option value='2'>杭州恋家装修公司2</option>
+                                <option value='3'>杭州恋家装修公司3</option>
+                            </select>
+                        </div>
+
+                        <p style="font-size: 16px;color:#333333;margin-top:20px;">上传户型图</p><br>
+                        <div class="clearfix">
+                            <div class="uploadimg left">
+                                <input type="file"  name="file" id="doc" multiple="multiple" onchange="javascript:setImagePreviews('doc');" accept="image/*" />
+                                <img src="img/tianjiatuppian.png" alt="">
+                            </div>
+                            <div class="setCover left" style="margin-left: 31px;margin-right: 31px;">
+                                <img src="img/huxingtu1.png" alt=""><br>
+                                <input type="radio" name="covers"  value="0" />&nbsp;&nbsp;设为封面<!--</label>-->
+                            </div>
+                            <div class="setCover left">
+                                <img src="img/huxingtu2.png" alt=""><br>
+                                <input type="radio" name="covers"  value="1" />&nbsp;&nbsp;设为封面<!--</label>-->
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <p style="font-size: 16px;color:#333333;margin-top:20px;">上传效果图</p><br>
+                            <div class="uploadimg left">
+                                <input type="file"  name="file1" id="doc1" multiple="multiple" onchange="javascript:setImagePreviews('doc1');" accept="image/*" />
+                                <img src="img/tianjiatuppian.png" alt="">
+                            </div>
+                            <div class="setCover left" style="margin-left: 31px;margin-right: 31px;">
+                                <img src="img/huxingtu1.png" alt=""><br>
+                                <input type="radio" name="covers"  value="0" />&nbsp;&nbsp;设为封面<!--</label>-->
+                            </div>
+                            <div class="setCover left">
+                                <img src="img/huxingtu2.png" alt=""><br>
+                                <input type="radio" name="covers"  value="1" />&nbsp;&nbsp;设为封面<!--</label>-->
+                            </div>
+                        </div>
+                        <!--<input type='hidden' name="subInfo" value="1" />-->
+                        <div class="btn" style="margin-left: 20px;margin-bottom: 10px;">
+                            <input type="submit" value="保存"style="width: 180px;height:32px;background: #f8a62a;border: none;color: #ffffff;border-radius: 16px;"/>
+                        </div>
+                    </div>
+                </form>
+            </li>
+            <li class="personalData">
+                <p class="listTitle clearfix"><span class="left"></span><b class="left">团队人员</b></p>
+                <div class="dlList clearfix" id="dlList">
+                    <div class="firFade">
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">设计师</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="firFade none">
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;margin-right: 108px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                        <dl style="width:105px;height: 150px;" class="left">
+                            <dt>
+                                <img src="img/touxiang.png" alt="">
+                            </dt>
+                            <dd style="text-align: center;font-size: 16px;font-weight: 700;">
+                                张妍妍 <span style="font-size: 14px;font-weight:normal;">总经理</span>
+                            </dd>
+                        </dl>
+                    </div>
+
+
+                </div>
+                <p class="clickPage" style="width:100%;text-align: center;margin-bottom: 50px;"><span style="margin-right: 20px;cursor: pointer" class="clickColor">1</span><span style="cursor: pointer">2</span></p>
+            </li>
+            <li  class="personalData">
+                <p class="listTitle clearfix"><span class="left"></span><b class="left">添加人员</b></p>
+                <div>
+                    <label>职业类别:</label>&nbsp;
+                    <input type="radio" name="jobs"  value="1" />&nbsp;&nbsp;设计师<!--</label>-->
+                    <input type="radio" name="jobs" value="0"  checked="checked" />&nbsp;&nbsp;项目经理<!--</label>-->
+                </div>
+                <div style="margin-top: 22px;margin-bottom: 19px;">
+                    <label>姓名:</label>&nbsp;
+                    <input type="text" placeholder="请输入姓名" style="width:264px;height: 34px;">
+                </div>
+                <div style="margin-bottom: 41px;">
+                    <label>职位:</label>&nbsp;
+                    <input type="text" placeholder="请输入职位" style="width:264px;height: 34px;">
+                </div>
+                <div id="ddimgs" style="margin-left:33px;width: 136px;height: 136px;background: url(img/head-team.png) no-repeat center">
+                </div>
+                <div style="margin-left:33px;width:136px;height: 32px;background-color: #63b23f;position: relative;text-align: center;line-height: 32px;color: #ffffff;">
+                    选择上传头像
+                    <input type="file" style="position: absolute;top:0;left: 0;width:136px;height: 32px;opacity: 0"   name="file" id="docimgs" multiple="multiple" onchange="javascript:setImagePreviewss();" accept="image/*" />
+                </div>
+                <p style="font-size: 12px;color: #cccccc;line-height: 34px;">仅支持JPG、GIF、PNG图片文件，且文件小于5M</p>
+                <div class="btn" style="margin-left: 20px;margin-bottom: 10px;">
+                    <input type="submit" value="保存"style="width: 180px;height:32px;background: #f8a62a;border: none;color: #ffffff;border-radius: 16px;"/>
+                </div>
+            </li>
+            <li class="personalData comIntroduce">
+                <p class="listTitle clearfix"><span class="left"></span><b class="left">公司介绍</b><i class="left" style="margin-left:14px;font-size: 12px;font-style: normal;color: #e60707;line-height: 34px;">公司介绍每半年仅能更改一次，请谨慎提交</i></p>
+                <div>
+                    <p class="left">公司LOGO:&nbsp;</p>
+                    <img src="img/gongsijieshao-logo.png" alt="">
+                </div>
+                <p style="margin-bottom: 10px"><label>公司名称:</label><span>恋家网络科技有限公司</span></p>
+                <div class ="city"><label>公司地址:</label>
+                    <select id="cmbProvince" style="width:82px;height: 34px;margin-right:5px;vertical-align:middle;" name="cmbProvince"></select>
+                    <select id="cmbCity" style="width:82px;height: 34px;margin-right:5px;vertical-align:middle;" name="cmbCity"> </select>
+                    <select id="cmbArea" style="width:82px;height: 34px;margin-right:5px;vertical-align:middle;" name="cmbArea"></select><!-- onchange="clearTishi(this);"-->
+                    <div class="addr_info" style="margin-top: 10px;margin-bottom: 30px;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="user_input_address" id="building" type="text" name="address" value="请输入详细地址" style="width:264px;height: 34px;color:#e6e6e6;" onfocus="make_tip(this,'focus');" onblur="make_tip(this,'blur')"/>
+                        <ul class="address_list" id="address_list">
+
+                        </ul>
+                        <div class="message"></div>
+                    </div>
+                </div>
+                <div class="checkUp">
+                    <p class="mbt21">服务区域</p>
+                    <p><span><input type="checkbox">滨江区</span><span><input type="checkbox">拱墅区</span><span><input type="checkbox">上城区</span><span><input type="checkbox">余杭区</span><span><input type="checkbox">下城区</span><span><input type="checkbox">西湖区</span></p>
+                    <p><span><input type="checkbox">萧山区</span><span><input type="checkbox">江干区</span></p>
+                </div>
+                <div class="checkUp">
+                    <p class="mbt21">经营范围</p>
+                    <p><span><input type="checkbox">出住房装修</span><span><input type="checkbox">家庭装修</span><span><input type="checkbox">办公室装修</span><span><input type="checkbox">店面装修</span><span><input type="checkbox">局部装修</span><span><input type="checkbox">别墅装修</span></p>
+                    <p><span><input type="checkbox">房屋改造&nbsp;&nbsp;&nbsp;&nbsp;</span><span><input type="checkbox">二手翻新</span><span><input type="checkbox">装修设计&nbsp;&nbsp;&nbsp;&nbsp;</span><span><input type="checkbox">商业装修</span></p>
+                </div>
+                <div class="checkUp">
+                    <p class="mbt21">擅长风格</p>
+                    <p><span><input type="checkbox">简约</span><span><input type="checkbox">田园</span><span><input type="checkbox">现代</span><span><input type="checkbox">中式</span><span><input type="checkbox">欧式</span><span><input type="checkbox">日式</span></p>
+                    <p><span><input type="checkbox">地中海</span></p>
+                </div>
+                <div class="btn" style="margin-bottom: 80px;text-align: center">
+                    <input type="submit" value="保存"style="width: 180px;height:32px;background: #f8a62a;border: none;color: #ffffff;border-radius: 16px;"/>
+                </div>
+            </li>
+            <li  class="personalData">
+                <p class="listTitle clearfix"><span class="left"></span><b class="left">相关资质</b></p>
+                <p style="font-size: 14px;color: #666666;margin-bottom: 20px;">营业执照</p>
+                <!--图片选择对话框-->
+                <div id="div_imgfile"></div>
+
+                <!--图片预览容器-->
+                <div id="div_imglook">
+                    <div style="clear: both;"></div>
+                </div>
+
+                <!--确定上传按钮-->
+                <input type="button" value="确定上传" id="btn_ImgUpStart" />
+
+            </li>
+            <li class="nowBind">
+                <div class="pInfo clearfix emailbtn" style="height: 82px;line-height: 82px;">
+                    <dl class="left firdl" style="border-right: none">
+                        <dt class="left"><img src="img/mailxg.png" alt=""></dt>
+                        <dd class="left" style="padding-top: 10px;">
+                            <p style="font-size: 12px;line-height: 21px;">邮箱绑定</p>
+                            <p style="font-size: 12px;line-height: 21px;"><span>未绑定</span></p>
+                        </dd>
+                    </dl>
+                    <button class="right" style="cursor:pointer;border:none;color:#ffffff;width:86px;height: 36px;background: #f8a62b;display: block;margin-top:15px;margin-right: 75px;" onclick="bdemail();return false;">立即绑定</button>
+                </div>
+                <div class="comPlaint none">
+                    <p class="listTitle clearfix"><span class="left"></span><b class="left">绑定邮箱</b></p>
+                    <div class="reset_line">
+                        <div>
+                            <p class="cur"><em>1</em><b></b><span>输入邮箱地址</span></p>
+                            <p><em>2</em><b></b><span>发送邮箱链接</span></p>
+                            <p class="last"><em>3</em><span>完成</span></p>
+                        </div>
+                    </div>
+                    <!--<form method="post" onSubmit="return checkF(this)" id="yzEmail" action='./yz_administration_self.php?act=4&bd=1&display=1'>-->
+                    <!--<form>-->
+                    <div class="reset_content">
+                        <dl>
+                            <dd>
+                                <span>邮箱</span>
+                                <input type="text" name="email" id="email" onblur="checkE()"/>
+                                <div class="message" id="email_info" style="color:#f82a2a;text-indent: 50px;line-height: 24px;"></div>
+                            </dd>
+                            <dd>
+                                <span>验证码</span>
+                                <input type="text" class="code" name="yzm" id="yzm" />
+                                <div class="left emailCode code" id="passport" style="width: 93px;height:24px;color: #6565fe;font-size: 24px;line-height: 24px;margin-left: 5px;"></div><a href="javascript:;" class="nextOne">换一张</a>
+                                <div class="message" id="yzm_meg"></div>
+                            </dd>
+                        </dl>
+                        <input type="hidden" name="bd_val" value="2"/>
+                        <input type="submit" value="下一步" class="next_bit" style="margin-left: -10px">
+                        <div style="width:432px;font-size: 14px;color:#666666;margin-left:-35px;display: none" class="secondStep">
+                            <p>已发送验证邮件至 <span style="color: #f8a62a;">1605034***@qq.com</span>,请立即完成验证</p>
+                            <p style="color: #999999;margin-top: 20px">验证邮件24小时内有效,请尽快登录您的邮箱点击验证链接完成验证。</p>
+                            <button style="width:164px;height:38px;border:none;background: #f8a62a;display:block;margin-left:80px;color:#fff;margin-top:40px;" class="checkEmail">立即去邮箱验证</button>
+                        </div>
+
+
+                    </div>
+                    <!--</form>-->
+                </div>
+            </li>
+            <li class="changePsd">
+                <div class="listTitle clearfix"><span class="left"></span><b class="left">修改密码</b></div>
+                <p>旧密码&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="oldPsd"></p>
+                <p>新密码&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="newPsd"></p>
+                <p>确认密码&nbsp;:&nbsp;<input type="text" name="conPsd"></p>
+                <p>验证码&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="yzm" id="code">&nbsp;&nbsp;<span class="code" style="color:#6565fe;display: inline-block;font-size: 22px;"></span>&nbsp;&nbsp;<span class="huan" style="cursor: pointer">换一张</span><span class="change" style="color:#f00;font-size:16px;"></span></p>
+                <button class="button" style="width:118px;height:36px;border: none;background: #f8a62a;font-size: 16px;color: #ffffff;margin-left: 65px;margin-top:28px;">立即提交</button>
+            </li>
+            <li class="personalData systemNote clearfix" style="padding-bottom: 78px;">
+                <p class="listTitle clearfix"><span class="left"></span><b class="left">系统通知</b></p>
+                <dl class="clearfix">
+                    <dt>
+                        欢迎成为恋家家装用户唯一的那个你！
+                        <span class="right">2017-11-17  09：00</span>
+                    </dt>
+                    <dd>
+                        互联网装修一体化平台——恋家家装感谢您的倾情加盟，为了给您带来更好的体验，我们建 <br>议您完善资料，获取更丰富的装修资源。
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        消息标题
+                        <span class="right">2017-11-17  09：00</span>
+                    </dt>
+                    <dd>
+                        互联网装修一体化平台——恋家家装感谢您的倾情加盟，为了给您带来更好的体验，我们建 <br>议您完善资料，获取更丰富的装修资源。
+                    </dd>
+                </dl>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footerWarp">
+    <div class="footer">
+        <div class="links">
+            <a>友情链接:</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a><br>
+            <a href="javascript:;" class="ml75">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+            <a href="javascript:;">杭州装修网</a>
+        </div>
+        <p class="dcase">
+            <a href="javascript:;">我要装修</a>
+            <a href="javascript:;">找装修</a>
+            <a href="javascript:;">装修案例</a>
+            <a href="javascript:;">装修案例</a>
+            <a href="javascript:;">装修案例</a>
+        </p>
+        <div class="phoneNum">
+            0571-5626-8961
+        </div>
+        <p class="address">
+            地址:杭州市滨江区秋溢路399号金润科技园B座9楼
+        </p>
+        <dl class="qrb">
+            <dt><img src="img/QRb.png" alt=""></dt>
+            <dd>恋家二维码</dd>
+        </dl>
+    </div>
+    <div class="copy">Copyright © 2017 恋家网络科技有限公司 版权所有京ICP 备 15007819 号-1</div>
+</div>
+</body>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-migrate-1.2.1.min.js"></script>
+<!--<script src="js/jquery-3.2.1.min.js"></script>-->
+<script src="js/avater_swfobject.js"></script>
+<!--<script src="js/reset_password.js"></script>-->
+<!--<script src="js/GlobalProvinces.js"></script>-->
+<script src="js/jsAddress.js"></script>
+<script type="text/javascript">
+    addressInit('cmbProvince', 'cmbCity', 'cmbArea');
+</script>
+<script src="laypage/laypage.js"></script>
+<script src="js/index.js"></script>
+
+<script src="js/imgUp.js"></script>
+<script>
+
+    //点击切换团队人员
+    $('.clickPage').on('click','span',function(){
+        $(this).addClass('clickColor').siblings().removeClass('clickColor');
+        var Index=$(this).index();
+        $('.firFade').eq(Index).removeClass('none').siblings().addClass('none');
+    })
+</script>
+</html>
